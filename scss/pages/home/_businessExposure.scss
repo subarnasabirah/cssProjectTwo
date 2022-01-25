@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    z-index: -1;
+    z-index: 1;
     &::before {
         @include media("sm") {
             height: 60vh;
@@ -29,6 +29,7 @@
         );
     }
     .resturant-img-content {
+        position: relative;
         max-width: 650px;
         z-index: 1;
         @include media("sm") {

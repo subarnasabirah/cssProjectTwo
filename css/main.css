@@ -34,7 +34,7 @@ h1.h1_ { margin-top: 100px; }
 
 .footer-bg .footer-list .submit-btn .email-input { position: relative; border: none; padding: 12px 0 12px 15px; border-radius: 8px; background-color: #ffffff; max-width: 270px; width: 100%; }
 
-.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 12px; border-radius: 5px; background-color: #234DD4; color: #ffffff; border: none; left: 186px; margin-top: 5px; font-size: 12px; }
+.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 12px; border-radius: 5px; background-color: #234DD4; color: #ffffff; border: none; left: 185px; margin-top: 5px; font-size: 12px; }
 
 @media all and (max-width: 991px) { .footer-bg .company { margin-bottom: 30px; }
   .footer-bg .contact-us { margin-bottom: 30px; } }
@@ -189,7 +189,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .owl-carousel .owl-dots .owl-dot .owl-dots { text-align: center !important; margin-top: 30px; }
 
-.container-bg { position: relative; margin-top: -60px; background: #ffffff; border-radius: 10px 10px 0 0; z-index: 999; }
+.container-bg { position: relative; margin-top: -60px; background: #ffffff; border-radius: 10px 10px 0 0; z-index: 3; }
 
 @media all and (max-width: 575px) { .container-bg { margin-top: 20px; border-radius: none; } }
 
@@ -319,7 +319,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 .client-testimonial .testimonial h6 { font-size: 16px; margin-top: -5px; color: #234DD4; }
 
-.resturant-img { margin-top: 70px; height: 80vh; position: relative; background-image: url("../img/resturant-img.png"); background-attachment: fixed; background-repeat: no-repeat; background-position: center center; background-size: cover; z-index: -1; }
+.resturant-img { margin-top: 70px; height: 80vh; position: relative; background-image: url("../img/resturant-img.png"); background-attachment: fixed; background-repeat: no-repeat; background-position: center center; background-size: cover; z-index: 1; }
 
 @media all and (max-width: 767px) { .resturant-img { height: 60vh; } }
 
@@ -327,7 +327,7 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 
 @media all and (max-width: 767px) { .resturant-img::before { height: 60vh; } }
 
-.resturant-img .resturant-img-content { max-width: 650px; z-index: 1; }
+.resturant-img .resturant-img-content { position: relative; max-width: 650px; z-index: 1; }
 
 @media all and (max-width: 767px) { .resturant-img .resturant-img-content { padding: 0 30px; } }
 
@@ -392,5 +392,17 @@ header.scrolled { background: #171a21 !important; padding: 10px 0; -webkit-trans
 .call-to-action .action-btn { text-align: right; }
 
 @media all and (max-width: 767px) { .call-to-action .action-btn { text-align: center; } }
+
+.banner-area-bg { background-color: #f4f4f4; position: relative; padding: 100px 0; }
+
+.banner-area-bg .content { position: relative; }
+
+.banner-area-bg .content .author-img { float: left; margin-right: 20px; }
+
+.banner-area-bg .content .author-img img { display: block; height: 100px; width: 100px; border-radius: 50%; border: 2px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+.banner-area-bg .content .author-details p { font-size: 30px; font-weight: 500; color: #222222; }
+
+.banner-area-bg .content .author-details .reviews ul li { display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
