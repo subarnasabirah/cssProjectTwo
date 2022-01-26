@@ -1,10 +1,11 @@
 header {
   width: 100%;
   position: fixed;
-  z-index: 11;
+  z-index: 1000;
 
   .navbar {
     background-color: transparent !important;
+    padding: 15px 10px;
     .navbar-toggler {
       color: $white;
 
@@ -16,7 +17,6 @@ header {
         border: none !important;
         border-radius: 0 !important;
         transition: 0 !important;
-        // margin-right: -45px;
         align-items: center;
       }
 
@@ -31,7 +31,6 @@ header {
       font-weight: 600;
       font-size: 25px;
       color: $white;
-      padding: 0 10px;
     }
     .search-box {
       @include media("md") {
@@ -76,8 +75,6 @@ header {
           width: 100%;
           min-height: 1px;
           padding: 0 15px;
-
-          // border-top: 1px solid #ffffff80;
           &.scrolled {
             background: rgba(23, 26, 33, 1) !important;
             @include transition(0.75s ease);
@@ -149,20 +146,52 @@ header {
           @include media("md") {
             display: none;
           }
-          background-color: $white;
-          padding: 8px 20px;
-          color: $black;
+          display: inline-block;
+          height: 40px;
+          width: 140px;
+          border-radius: 50px;
+          color: $white;
           font-size: 14px;
-          margin-left: 20px;
-          @include transition(0.75s ease);
+          letter-spacing: .7px;
+          line-height: 26px;
+          transition: all .3s;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $brand-color;
+            border-radius: 10rem;
+            z-index: -2;
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: darken($brand-color, 15%);
+            transition: all .3s;
+            border-radius: 10rem;
+            z-index: -1;
+          }
+          &:hover {
+            color: $white;
+            &:before {
+              width: 100%;
+            }
+          }
           i {
             margin-right: 5px;
             font-size: 12px;
           }
-          &:hover {
-            background-color: $brand-color;
-            color: $white;
-          }
+
         }
       }
     }
@@ -170,34 +199,28 @@ header {
 }
 .banner-img {
   @include media("md") {
-    height: 80vh;
+    background-position: 20% center;
   }
-  @include media("xs") {
-    height: 75vh;
-  }
+
   position: relative;
   background-image: url("../img/banner-img.jpg");
   background-size: cover;
-  height: 100vh;
+  background-position: center center;
+  height: 860px;
   z-index: 1;
   &::before {
-    @include media("md") {
-      height: 80vh;
-    }
-    @include media("xs") {
-      height: 75vh;
-    }
     content: "";
     position: absolute;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100vh;
     background-image: linear-gradient(
                     to bottom,
-                    rgba(0, 0, 0, 0.7),
-                    rgba(0, 0, 0, 0.7),
-                    rgba(0, 0, 0, 0.7)
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
     );
   }
   .banner-img-content {
@@ -317,7 +340,8 @@ header {
 }
 
 header.scrolled {
-  background: rgba(23, 26, 33, 1) !important;
-  padding: 10px 0;
+  background: $white !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: $black !important;
   @include transition(0.75s ease);
 }
