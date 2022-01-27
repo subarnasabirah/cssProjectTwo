@@ -69,6 +69,10 @@
             position: absolute;
             right: 25px;
             top: 22px;
+            &:hover {
+                background: darken(#ed4949, 20%);
+                transition: all .3s;
+            }
         }
         .rieviews {
             display: flex;
@@ -105,12 +109,24 @@
             }
             .site-icon-one{
                 background: $black;
+                &:hover{
+                    background: lighten($black, 10%);
+                    transition: all .3s;
+                }
             }
             .site-icon-two{
                 background: #1768DD;
+                &:hover{
+                    background: darken(#1768DD, 20%);
+                    transition: all .3s;
+                }
             }
             .site-icon-three{
                 background: #F4736D;
+                &:hover{
+                    background: darken(#F4736D, 10%);
+                    transition: all .3s;
+                }
             }
             .popular-things-heading {
                 h4 a {
@@ -171,12 +187,24 @@
                 }
                 .resturant-icon-one{
                     background: #dd9934;
+                    &:hover{
+                        background: lighten(#dd9934, 20%);
+                        transition: all .3s;
+                    }
                 }
                 .resturant-icon-two{
                     background: #DD3333;
+                    &:hover{
+                        background: darken(#DD3333, 20%);
+                        transition: all .3s;
+                    }
                 }
                 .resturant-icon-three{
                     background: #33A0DD;
+                    &:hover{
+                        background: darken(#33A0DD, 20%);
+                        transition: all .3s;
+                    }
                 }
             }
             .activities-icon-one {

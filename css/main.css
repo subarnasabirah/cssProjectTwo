@@ -180,6 +180,8 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .banner-img .banner-img-content .responsive-search-area .responsive-search-box span { color: #ffffff; padding: 10px; background: #8B9A46; border-radius: 50%; font-size: 18px; }
 
+.banner-img .banner-img-content .responsive-search-area .responsive-search-box span:hover { background-color: #4c5426; transition: all .3s; }
+
 .banner-img .banner-img-content .responsive-search-area .responsive-search-box ::placeholder { color: #A1A1A1; }
 
 .banner-img .banner-img-content .responsive-search-area .responsive-search-box .what-input-two { position: relative; }
@@ -233,6 +235,8 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .popular-things .popular-things-items .featured { text-decoration: none; color: #ffffff; padding: 8px 14px; background: #ed4949; border-radius: 8px; font-size: 14px; position: absolute; right: 25px; top: 22px; }
 
+.popular-things .popular-things-items .featured:hover { background: #bd1313; transition: all .3s; }
+
 .popular-things .popular-things-items .rieviews { display: flex; position: absolute; bottom: -25px; left: 20px; }
 
 .popular-things .popular-things-items .rieviews span { margin-right: 5px; color: #ffffff; font-size: 12px; }
@@ -245,9 +249,15 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .popular-things .popular-things-items .popular-things-content .site-icon-one { background: #000; }
 
+.popular-things .popular-things-items .popular-things-content .site-icon-one:hover { background: #1a1a1a; transition: all .3s; }
+
 .popular-things .popular-things-items .popular-things-content .site-icon-two { background: #1768DD; }
 
+.popular-things .popular-things-items .popular-things-content .site-icon-two:hover { background: #0d3d81; transition: all .3s; }
+
 .popular-things .popular-things-items .popular-things-content .site-icon-three { background: #F4736D; }
+
+.popular-things .popular-things-items .popular-things-content .site-icon-three:hover { background: #f0463e; transition: all .3s; }
 
 .popular-things .popular-things-items .popular-things-content .popular-things-heading h4 a { font-size: 18px; color: #000; font-weight: 700; text-decoration: none; }
 
@@ -271,9 +281,15 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .popular-things .popular-things-items .popular-things-footer p .resturant-icon-one { background: #dd9934; }
 
+.popular-things .popular-things-items .popular-things-footer p .resturant-icon-one:hover { background: #ecc58b; transition: all .3s; }
+
 .popular-things .popular-things-items .popular-things-footer p .resturant-icon-two { background: #DD3333; }
 
+.popular-things .popular-things-items .popular-things-footer p .resturant-icon-two:hover { background: #921818; transition: all .3s; }
+
 .popular-things .popular-things-items .popular-things-footer p .resturant-icon-three { background: #33A0DD; }
+
+.popular-things .popular-things-items .popular-things-footer p .resturant-icon-three:hover { background: #186692; transition: all .3s; }
 
 .popular-things .popular-things-items .popular-things-footer .activities-icon-one { float: right; color: #A1A1A1; margin-top: 30px; font-size: 16px; }
 
