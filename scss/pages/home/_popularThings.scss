@@ -22,11 +22,27 @@
         .popular-things-image {
             position: relative;
             overflow: hidden;
-            img {
-                display: block;
-                padding: 8px;
-                border-radius: 20px;
-                opacity: 0.8;
+            padding: 8px;
+            .top-image {
+                position: relative;
+                img {
+                    display: block;
+                    border-radius: 10px;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    border-radius: 10px;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.6);
+                }
+
             }
         }
 
@@ -59,15 +75,15 @@
             position: absolute;
             bottom: -25px;
             left: 20px;
-            i {
+            span {
                 margin-right: 5px;
                 color: $white;
-                font-size: 14px;
+                font-size: 12px;
             }
             p {
                 margin-left: 5px;
                 color: $white;
-                font-size: 14px;
+                font-size: 12px;
             }
         }
 
@@ -78,7 +94,6 @@
                 position: absolute;
                 top: -35px;
                 right: 30px;
-                background: $black;
                 border-radius: 50%;
                 height: 50px;
                 width: 50px;
@@ -87,6 +102,15 @@
                 color: $white;
                 border: 2px solid $white;
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            .site-icon-one{
+                background: $black;
+            }
+            .site-icon-two{
+                background: #1768DD;
+            }
+            .site-icon-three{
+                background: #F4736D;
             }
             .popular-things-heading {
                 h4 a {
@@ -137,14 +161,22 @@
 
                 float: left;
                 i {
-                    background: #dd9934;
                     height: 30px;
                     width: 30px;
                     border-radius: 50%;
-                    padding-top: 7px;
+                    padding-top: 8px;
                     margin-right: 5px;
                     color: $white;
                     text-align: center;
+                }
+                .resturant-icon-one{
+                    background: #dd9934;
+                }
+                .resturant-icon-two{
+                    background: #DD3333;
+                }
+                .resturant-icon-three{
+                    background: #33A0DD;
                 }
             }
             .activities-icon-one {

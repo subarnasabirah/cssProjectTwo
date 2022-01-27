@@ -219,9 +219,13 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .popular-things .popular-things-items { position: relative; overflow: hidden; border: 2px solid #eeeefe; border-radius: 10px; }
 
-.popular-things .popular-things-items .popular-things-image { position: relative; overflow: hidden; }
+.popular-things .popular-things-items .popular-things-image { position: relative; overflow: hidden; padding: 8px; }
 
-.popular-things .popular-things-items .popular-things-image img { display: block; padding: 8px; border-radius: 20px; opacity: 0.8; }
+.popular-things .popular-things-items .popular-things-image .top-image { position: relative; }
+
+.popular-things .popular-things-items .popular-things-image .top-image img { display: block; border-radius: 10px; }
+
+.popular-things .popular-things-items .popular-things-image .top-image::after { content: ""; display: block; position: absolute; border-radius: 10px; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 
 .popular-things .popular-things-items .popular-things-tag { position: absolute; top: 30px; left: 25px; }
 
@@ -231,13 +235,19 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .popular-things .popular-things-items .rieviews { display: flex; position: absolute; bottom: -25px; left: 20px; }
 
-.popular-things .popular-things-items .rieviews i { margin-right: 5px; color: #ffffff; font-size: 14px; }
+.popular-things .popular-things-items .rieviews span { margin-right: 5px; color: #ffffff; font-size: 12px; }
 
-.popular-things .popular-things-items .rieviews p { margin-left: 5px; color: #ffffff; font-size: 14px; }
+.popular-things .popular-things-items .rieviews p { margin-left: 5px; color: #ffffff; font-size: 12px; }
 
 .popular-things .popular-things-items .popular-things-content { padding: 20px; position: relative; }
 
-.popular-things .popular-things-items .popular-things-content .site-icons { position: absolute; top: -35px; right: 30px; background: #000; border-radius: 50%; height: 50px; width: 50px; text-align: center; padding-top: 12px; color: #ffffff; border: 2px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+.popular-things .popular-things-items .popular-things-content .site-icons { position: absolute; top: -35px; right: 30px; border-radius: 50%; height: 50px; width: 50px; text-align: center; padding-top: 12px; color: #ffffff; border: 2px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+
+.popular-things .popular-things-items .popular-things-content .site-icon-one { background: #000; }
+
+.popular-things .popular-things-items .popular-things-content .site-icon-two { background: #1768DD; }
+
+.popular-things .popular-things-items .popular-things-content .site-icon-three { background: #F4736D; }
 
 .popular-things .popular-things-items .popular-things-content .popular-things-heading h4 a { font-size: 18px; color: #000; font-weight: 700; text-decoration: none; }
 
@@ -257,7 +267,13 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .popular-things .popular-things-items .popular-things-footer p { color: #000; margin-top: 20px; padding-bottom: 0; text-align: left; float: left; }
 
-.popular-things .popular-things-items .popular-things-footer p i { background: #dd9934; height: 30px; width: 30px; border-radius: 50%; padding-top: 7px; margin-right: 5px; color: #ffffff; text-align: center; }
+.popular-things .popular-things-items .popular-things-footer p i { height: 30px; width: 30px; border-radius: 50%; padding-top: 8px; margin-right: 5px; color: #ffffff; text-align: center; }
+
+.popular-things .popular-things-items .popular-things-footer p .resturant-icon-one { background: #dd9934; }
+
+.popular-things .popular-things-items .popular-things-footer p .resturant-icon-two { background: #DD3333; }
+
+.popular-things .popular-things-items .popular-things-footer p .resturant-icon-three { background: #33A0DD; }
 
 .popular-things .popular-things-items .popular-things-footer .activities-icon-one { float: right; color: #A1A1A1; margin-top: 30px; font-size: 16px; }
 
