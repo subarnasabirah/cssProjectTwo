@@ -188,7 +188,7 @@
                 .resturant-icon-one{
                     background: #dd9934;
                     &:hover{
-                        background: lighten(#dd9934, 20%);
+                        background: darken(#dd9934, 20%);
                         transition: all .3s;
                     }
                 }

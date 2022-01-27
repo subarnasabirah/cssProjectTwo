@@ -281,7 +281,7 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .popular-things .popular-things-items .popular-things-footer p .resturant-icon-one { background: #dd9934; }
 
-.popular-things .popular-things-items .popular-things-footer p .resturant-icon-one:hover { background: #ecc58b; transition: all .3s; }
+.popular-things .popular-things-items .popular-things-footer p .resturant-icon-one:hover { background: #926119; transition: all .3s; }
 
 .popular-things .popular-things-items .popular-things-footer p .resturant-icon-two { background: #DD3333; }
 
@@ -351,7 +351,7 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .client-testimonial .single-testimonial { -webkit-box-shadow: 0 0 15px #ededed; box-shadow: 0 0 15px #ededed; text-align: center; padding: 30px; margin: 15px; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; background-color: #F4F4F4; }
 
-.client-testimonial .client-img img { width: 130px !important; height: 130px; margin: auto; margin-top: 5px; border-radius: 50%; border: 3px solid transparent; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+.client-testimonial .client-img img { width: 130px !important; height: 130px; margin: auto; margin-top: 5px; border-radius: 50%; border: 2px solid #8B9A46; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 
 .client-testimonial .testimonial-content h5 { margin-top: 15px; text-transform: uppercase; font-weight: 700; font-size: 16px; }
 
@@ -381,7 +381,7 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .resturant-img .resturant-img-content .works-btn:before { content: ''; position: absolute; bottom: 0; left: 0; width: 0%; height: 100%; background-color: #5c652e; transition: all .3s; border-radius: 10rem; z-index: -1; }
 
-.resturant-img .resturant-img-content .works-btn:hover { color: #ffffff; }
+.resturant-img .resturant-img-content .works-btn:hover { color: #ffffff; border: 1px solid #ffffff; }
 
 .resturant-img .resturant-img-content .works-btn:hover:before { width: 100%; }
 
@@ -421,7 +421,7 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 @media all and (max-width: 991px) { .news-tips .news-tips-items .news-tips-content .phone-address p .calender-icon { margin-left: 15px; } }
 
-.call-to-action { margin-top: 70px; position: relative; background-image: url("../img/callto-action.jpg"); background-size: cover; padding: 50px 0 35px 0; }
+.call-to-action { margin-top: 70px; position: relative; background-color: #8B9A46; background-image: url("../img/3.png"); background-size: cover; padding: 50px 0 35px 0; }
 
 @media all and (max-width: 767px) { .call-to-action .property-text { text-align: center; } }
 
@@ -429,9 +429,13 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .call-to-action .property-text p { color: #ffffff; font-size: 14px; }
 
-.call-to-action .submit-btn { background-color: #ffffff; padding: 12px 30px; color: #8B9A46; font-size: 14px; border-radius: 8px; font-weight: 600; border: none; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+.call-to-action .submit-btn { position: relative; border: 1px solid #ffffff; padding: 10px 30px; color: #ffffff; font-size: 14px; border-radius: 30px; font-weight: 600; background: transparent; transition: all .3s; z-index: 1; }
 
-.call-to-action .submit-btn:hover { background-color: #8B9A46; border: 1px solid #ffffff; color: #ffffff; }
+.call-to-action .submit-btn:before { content: ''; position: absolute; bottom: 0; left: 0; width: 0%; height: 100%; background-color: #5c652e; transition: all .3s; border-radius: 10rem; z-index: -1; }
+
+.call-to-action .submit-btn:hover { color: #ffffff; }
+
+.call-to-action .submit-btn:hover:before { width: 100%; }
 
 .call-to-action .action-btn { text-align: right; }
 

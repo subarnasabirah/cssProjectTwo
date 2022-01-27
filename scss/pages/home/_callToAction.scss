@@ -1,7 +1,8 @@
 .call-to-action{
     margin-top: 70px;
     position: relative;
-    background-image: url('../img/callto-action.jpg');
+    background-color: #8B9A46;
+    background-image: url('../img/3.png');
     background-size: cover;
     padding: 50px 0 35px 0;
     .property-text{
@@ -18,19 +19,33 @@
         }
     }
     .submit-btn{
-        background-color: $white;
-        padding: 12px 30px;
-        color: $brand-color;
+        position: relative;
+        border: 1px solid $white;
+        padding: 10px 30px;
+        color: $white;
         font-size: 14px;
-        border-radius: 8px;
+        border-radius: 30px;
         font-weight: 600;
-        border: none;
-        @include transition(0.75s ease);
-        &:hover{
-            background-color: $brand-color;
-            border: 1px solid $white;
+        background: transparent;
+        transition: all .3s;
+        z-index: 1;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: darken($brand-color, 15%);
+            transition: all .3s;
+            border-radius: 10rem;
+            z-index: -1;
+        }
+        &:hover {
             color: $white;
-
+            &:before {
+                width: 100%;
+            }
         }
     }
 
