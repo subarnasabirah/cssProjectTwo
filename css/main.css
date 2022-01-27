@@ -14,27 +14,33 @@ h1.h1_ { margin-top: 100px; }
 
 .footer-bg { background-color: #1d293f; color: #ffffff; padding: 70px 0; }
 
-.footer-bg .contact-us p { color: #ffffff; font-size: 18px; }
+.footer-bg .contact-us p { color: #ffffff; font-size: 18px; padding-top: 10px; }
 
-.footer-bg .contact-us ul li { padding-top: 10px; font-size: 14px; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+.footer-bg .contact-us ul li { padding-top: 10px; }
 
-.footer-bg .contact-us ul li:hover { padding-left: 10px; }
+.footer-bg .contact-us ul li i { margin-right: 10px; }
 
-.footer-bg .contact-us ul li i { padding-right: 10px; }
+.footer-bg .contact-us ul li a { font-size: 14px; text-decoration: none; color: #ffffff; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+
+.footer-bg .contact-us ul li a:hover { padding-left: 10px; color: #8B9A46; }
 
 .footer-bg .footer-list p { color: #ffffff; font-size: 16px; padding-top: 10px; }
 
-.footer-bg .footer-list ul li { padding-top: 10px; font-size: 14px; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+.footer-bg .footer-list ul li { padding-top: 10px; }
 
-.footer-bg .footer-list ul li:hover { padding-left: 10px; }
+.footer-bg .footer-list ul li a { text-decoration: none; color: #ffffff; font-size: 14px; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; }
+
+.footer-bg .footer-list ul li a:hover { padding-left: 10px; color: #8B9A46; }
 
 .footer-bg .footer-list .spam-text { font-size: 14px; }
 
 .footer-bg .footer-list .submit-btn { position: relative; }
 
-.footer-bg .footer-list .submit-btn .email-input { position: relative; border: none; padding: 12px 0 12px 15px; border-radius: 8px; background-color: #ffffff; max-width: 270px; width: 100%; }
+.footer-bg .footer-list .submit-btn .email-input { position: relative; border: none; padding: 12px 0 12px 15px; border-radius: 30px; background-color: #ffffff; max-width: 275px; width: 100%; }
 
-.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 12px; border-radius: 5px; background-color: #8B9A46; color: #ffffff; border: none; left: 185px; margin-top: 5px; font-size: 12px; }
+.footer-bg .footer-list .submit-btn .subscribe-btn { position: absolute; padding: 8px 15px; border-radius: 20px; background-color: #8B9A46; color: #ffffff; border: none; left: 185px; margin-top: 5px; font-size: 12px; transition: all .3s; }
+
+.footer-bg .footer-list .submit-btn .subscribe-btn:hover { background: #4c5426; }
 
 @media all and (max-width: 991px) { .footer-bg .company { margin-bottom: 30px; }
   .footer-bg .contact-us { margin-bottom: 30px; } }
@@ -43,9 +49,15 @@ h1.h1_ { margin-top: 100px; }
 
 .footer-bottom { background-color: #1d293f; color: #ffffff; border-top: 1px solid #2d374b; padding: 20px 0; }
 
+.footer-bottom .reserved-text .exshine-text { font-weight: 500; font-size: 10px; text-transform: uppercase; color: #ffffff; letter-spacing: 2px; }
+
+.footer-bottom .reserved-text .exshine-text .x-text { color: #8B9A46; font-size: 12px; }
+
 @media all and (max-width: 767px) { .footer-bottom .reserved-text { text-align: center; } }
 
-.footer-bottom .guido-logo { text-align: center; }
+.footer-bottom .guido-logo { text-align: center; font-weight: 500; font-size: 20px; text-transform: uppercase; color: #ffffff; letter-spacing: 4px; text-decoration: none; }
+
+.footer-bottom .guido-logo span { color: #8B9A46; font-size: 25px; }
 
 .footer-bottom .social-icon { text-align: right; }
 

@@ -6,17 +6,23 @@
         p {
             color: $white;
             font-size: 18px;
+            padding-top: 10px;
         }
         ul {
             li {
                 padding-top: 10px;
-                font-size: 14px;
-                @include transition(0.75s ease);
-                &:hover {
-                    padding-left: 10px;
-                }
                 i {
-                    padding-right: 10px;
+                    margin-right: 10px;
+                }
+                a{
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: $white;
+                    @include transition(0.75s ease);
+                    &:hover {
+                        padding-left: 10px;
+                        color: $brand-color;
+                    }
                 }
             }
         }
@@ -30,10 +36,15 @@
         ul {
             li {
                 padding-top: 10px;
-                font-size: 14px;
-                @include transition(0.75s ease);
-                &:hover {
-                    padding-left: 10px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 14px;
+                    @include transition(0.75s ease);
+                    &:hover {
+                        padding-left: 10px;
+                        color: $brand-color;
+                    }
                 }
             }
         }
@@ -46,21 +57,25 @@
                 position: relative;
                 border: none;
                 padding: 12px 0 12px 15px;
-                border-radius: 8px;
+                border-radius: 30px;
                 background-color: $white;
-                max-width: 270px;
+                max-width: 275px;
                 width: 100%;
             }
             .subscribe-btn {
                 position: absolute;
-                padding: 8px 12px;
-                border-radius: 5px;
+                padding: 8px 15px;
+                border-radius: 20px;
                 background-color: $brand-color;
                 color: $white;
                 border: none;
                 left: 185px;
                 margin-top: 5px;
                 font-size: 12px;
+                transition: all .3s;
+                &:hover{
+                    background: darken($brand-color, 20%);
+                }
             }
         }
     }
@@ -84,12 +99,33 @@
     border-top: 1px solid #2d374b;
     padding: 20px 0;
     .reserved-text {
+        .exshine-text {
+            font-weight: 500;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $white;
+            letter-spacing: 2px;
+            .x-text {
+                color: $brand-color;
+                font-size: 12px;
+            }
+        }
         @include media("sm") {
             text-align: center;
         }
     }
     .guido-logo {
         text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 4px;
+        text-decoration: none;
+        span{
+            color: $brand-color;
+            font-size: 25px;
+        }
     }
     .social-icon {
         text-align: right;
