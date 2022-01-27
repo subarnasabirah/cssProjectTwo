@@ -5,7 +5,7 @@
     margin-top: 70px;
     height: 80vh;
     position: relative;
-    background-image: url("../img/resturant-img.png");
+    background-image: url("../img/resturant-img.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -53,17 +53,33 @@
             padding-bottom: 20px;
         }
         .works-btn {
-            background-color: $white;
+            //background-color: $white;
+            position: relative;
             padding: 12px 30px;
             color: $brand-color;
+            border: 1px solid $brand-color;
             font-size: 14px;
-            border-radius: 8px;
+            border-radius: 30px;
             font-weight: 600;
             text-decoration: none;
+            transition: all .3s;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                background-color: darken($brand-color, 15%);
+                transition: all .3s;
+                border-radius: 10rem;
+                z-index: -1;
+            }
             &:hover {
-                background-color: $brand-color;
-                padding: 12px 30px;
                 color: $white;
+                &:before {
+                    width: 100%;
+                }
             }
         }
     }

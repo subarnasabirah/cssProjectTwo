@@ -359,7 +359,7 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .client-testimonial .testimonial h6 { font-size: 16px; margin-top: -5px; color: #8B9A46; }
 
-.resturant-img { margin-top: 70px; height: 80vh; position: relative; background-image: url("../img/resturant-img.png"); background-attachment: fixed; background-repeat: no-repeat; background-position: center center; background-size: cover; z-index: 1; }
+.resturant-img { margin-top: 70px; height: 80vh; position: relative; background-image: url("../img/resturant-img.jpg"); background-attachment: fixed; background-repeat: no-repeat; background-position: center center; background-size: cover; z-index: 1; }
 
 @media all and (max-width: 767px) { .resturant-img { height: 60vh; } }
 
@@ -377,9 +377,13 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .resturant-img .resturant-img-content h3 { color: #ffffff; font-weight: 400; font-size: 14px; line-height: 31px; padding-bottom: 20px; }
 
-.resturant-img .resturant-img-content .works-btn { background-color: #ffffff; padding: 12px 30px; color: #8B9A46; font-size: 14px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+.resturant-img .resturant-img-content .works-btn { position: relative; padding: 12px 30px; color: #8B9A46; border: 1px solid #8B9A46; font-size: 14px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: all .3s; }
 
-.resturant-img .resturant-img-content .works-btn:hover { background-color: #8B9A46; padding: 12px 30px; color: #ffffff; }
+.resturant-img .resturant-img-content .works-btn:before { content: ''; position: absolute; bottom: 0; left: 0; width: 0%; height: 100%; background-color: #5c652e; transition: all .3s; border-radius: 10rem; z-index: -1; }
+
+.resturant-img .resturant-img-content .works-btn:hover { color: #ffffff; }
+
+.resturant-img .resturant-img-content .works-btn:hover:before { width: 100%; }
 
 .news-tips h3 { text-align: center; font-size: 25px; font-weight: 600; color: #000; line-height: 20px; padding: 70px 0 10px 0; }
 
