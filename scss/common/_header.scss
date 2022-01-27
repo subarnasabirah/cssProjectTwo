@@ -312,6 +312,10 @@ header {
         background: $brand-color;
         border-radius: 50%;
         font-size: 18px;
+        &:hover{
+          background-color: darken($brand-color, 20%);
+          transition: all .3s;
+        }
       }
       ::placeholder {
         color: $light-gray;

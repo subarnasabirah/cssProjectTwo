@@ -164,6 +164,8 @@ header .navbar .navbar-nav li .listing-btn i { margin-right: 5px; font-size: 12p
 
 .banner-img .banner-img-content .middle-search-box span { color: #ffffff; padding: 15px; background: #8B9A46; border-radius: 50%; font-size: 18px; }
 
+.banner-img .banner-img-content .middle-search-box span:hover { background-color: #4c5426; transition: all .3s; }
+
 .banner-img .banner-img-content .middle-search-box ::placeholder { color: #A1A1A1; }
 
 .banner-img .banner-img-content .middle-search-box .what-input { position: relative; }
@@ -205,9 +207,9 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 @media all and (max-width: 575px) { .services .service-item { display: block; margin: 15px auto; } }
 
-.services .service-item i { padding-top: 50px; color: #8B9A46; }
+.services .service-item i { padding-top: 40px; color: #8B9A46; font-size: 25px; }
 
-.services .service-item p { padding: 15px 0 15px 0; color: #000; }
+.services .service-item p { padding: 10px 0 15px 0; color: #000; }
 
 .services .service-item:hover, .services .service-item:hover i, .services .service-item:hover p { background: #8B9A46; border-radius: 8px; color: #ffffff; }
 
