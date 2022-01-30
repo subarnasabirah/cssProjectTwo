@@ -6,6 +6,7 @@ header {
   .navbar {
     background-color: transparent !important;
     padding: 15px 10px;
+
     .navbar-toggler {
       color: $white;
 
@@ -33,17 +34,20 @@ header {
       text-transform: uppercase;
       color: $white;
       letter-spacing: 4px;
-      span{
+
+      span {
         color: $brand-color;
         font-size: 25px;
       }
 
     }
+
     .search-box {
       @include media("md") {
         display: none;
       }
       position: relative;
+
       ::placeholder {
         color: $white;
       }
@@ -56,6 +60,7 @@ header {
         font-size: 14px !important;
         min-width: 220px !important;
       }
+
       .form-control-feedback {
         position: absolute;
         z-index: 2;
@@ -76,21 +81,23 @@ header {
       @include media("md") {
         margin-top: 20px !important;
         padding: 10px 0;
-        background: rgb(0,0,0) !important;
+        background: rgb(0, 0, 0) !important;
       }
+
       li {
         @include media("md") {
           width: 100%;
           min-height: 1px;
           padding: 0 15px;
           &.scrolled {
-            background: rgba(0,0,0,.8) !important;
+            background: rgba(0, 0, 0, .8) !important;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             @include transition(0.75s ease);
           }
         }
         position: relative;
         @include transition(0.75s ease);
+
         a {
           color: $white;
           padding-left: 15px !important;
@@ -99,6 +106,7 @@ header {
             padding: 10px;
             border-radius: 10px;
           }
+
           &:hover {
             @include media("md") {
               background-color: $brand-color;
@@ -112,9 +120,11 @@ header {
         .nav-item {
           font-weight: 600;
           padding-left: 10px;
+
           .nav-link:hover {
             color: $black;
           }
+
           a {
             i {
               margin-right: 5px;
@@ -134,16 +144,19 @@ header {
           border-radius: 5px;
           visibility: hidden;
           @include transition(0.75s ease);
+
           li {
             list-style-type: none;
             text-align: left;
             padding: 8px 0 8px 18px;
             border-bottom: 1px solid $white;
             width: 200px;
-            &:last-child{
+
+            &:last-child {
               border-bottom: none;
 
             }
+
             a {
               text-decoration: none;
               color: $white;
@@ -153,7 +166,8 @@ header {
               }
             }
           }
-          &:before{
+
+          &:before {
             position: absolute;
             content: " ";
             height: 20px;
@@ -165,10 +179,12 @@ header {
             z-index: -1;
           }
         }
+
         &:hover .dropdown {
           visibility: visible;
           @include transition(0.75s ease);
         }
+
         .listing-btn {
           @include media("md") {
             display: none;
@@ -185,6 +201,7 @@ header {
           position: relative;
           overflow: hidden;
           z-index: 1;
+
           &:after {
             content: '';
             position: absolute;
@@ -193,9 +210,11 @@ header {
             width: 100%;
             height: 100%;
             background-color: $brand-color;
+            border: 1px solid $brand-color;
             border-radius: 10rem;
             z-index: -2;
           }
+
           &:before {
             content: '';
             position: absolute;
@@ -208,12 +227,15 @@ header {
             border-radius: 10rem;
             z-index: -1;
           }
+
           &:hover {
             color: $white;
+
             &:before {
               width: 100%;
             }
           }
+
           i {
             margin-right: 5px;
             font-size: 12px;
@@ -224,6 +246,7 @@ header {
     }
   }
 }
+
 .banner-img {
   @include media("md") {
     background-position: 20% center;
@@ -235,6 +258,7 @@ header {
   background-position: center center;
   height: 860px;
   z-index: 1;
+
   &::before {
     content: "";
     position: absolute;
@@ -250,10 +274,12 @@ header {
                     rgba(0, 0, 0, 0.7)
     );
   }
+
   .banner-img-content {
     position: relative;
     z-index: 2;
     padding: 0 30px;
+
     h1 {
       color: $white;
       font-weight: 600;
@@ -264,6 +290,7 @@ header {
         line-height: 40px;
       }
     }
+
     p {
       color: $white;
       font-weight: 400;
@@ -273,6 +300,7 @@ header {
         line-height: 25px;
       }
     }
+
     .middle-search-box {
       display: flex;
       background: $white;
@@ -280,14 +308,17 @@ header {
       border-radius: 40px 40px;
       margin: 0 10px;
       position: relative;
+
       label {
         margin-top: 12px;
         font-size: 16px;
         font-weight: 400;
         padding: 0 10px 0 20px;
       }
+
       .where-label {
         margin-left: 5px;
+
         &::before {
           content: " ";
           position: absolute;
@@ -299,33 +330,41 @@ header {
           margin-right: 5px;
         }
       }
+
       input {
         background-color: transparent;
         border: none;
       }
+
       .where-input {
         max-width: 200px;
       }
+
       span {
         color: $white;
         padding: 15px;
         background: $brand-color;
         border-radius: 50%;
         font-size: 18px;
-        &:hover{
+
+        &:hover {
           background-color: darken($brand-color, 20%);
           transition: all .3s;
         }
       }
+
       ::placeholder {
         color: $light-gray;
       }
+
       .what-input {
         position: relative;
       }
     }
+
     .responsive-search-area {
       display: none;
+
       .responsive-search-box {
         background: $white;
         padding: 5px 15px;
@@ -334,6 +373,7 @@ header {
         display: flex;
         position: relative;
         z-index: 999;
+
         label {
           font-size: 16px;
           font-weight: 400;
@@ -344,25 +384,30 @@ header {
           position: relative;
           border: none;
         }
+
         span {
           color: $white;
           padding: 10px;
           background: $brand-color;
           border-radius: 50%;
           font-size: 18px;
-          &:hover{
+
+          &:hover {
             background-color: darken($brand-color, 20%);
             transition: all .3s;
           }
         }
+
         ::placeholder {
           color: $light-gray;
         }
+
         .what-input-two {
           position: relative;
         }
       }
     }
+
     @include media("xs") {
       .responsive-search-area {
         display: block;
@@ -375,7 +420,53 @@ header {
 }
 
 header.scrolled {
-  background: rgba(0,0,0,.8) !important;
+  background: rgba(0, 0, 0, .8) !important;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   @include transition(0.75s ease);
 }
+
+#explore {
+  background: $white !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  .explore-brand {
+    color: $black;
+  }
+
+  .explore-nav {
+    li {
+      a {
+        color: $black;
+        &:hover{
+          color: $brand-color;
+        }
+      }
+      .explore-listing-btn{
+        color: $white;
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .explore-search-box{
+    span{
+      color: $black;
+    }
+    .explore-search {
+      color: $black !important;
+      &::placeholder {
+        color: $black;
+      }
+    }
+  }
+  .explore-dropdown{
+    li{
+      a:hover{
+        color: $white;
+      }
+    }
+  }
+}
+

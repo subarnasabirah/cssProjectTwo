@@ -1,7 +1,7 @@
 .banner-area-bg {
   background-color: #f4f4f4;
   position: relative;
-  padding: 100px 0;
+  padding: 200px 0 100px 0;
 
   .content {
     position: relative;
@@ -21,19 +21,79 @@
     }
     .author-details{
       p{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 500;
         color: $text-color;
+        margin-top: 10px;
       }
       .reviews{
         ul{
           li{
             display: inline-block;
+            color: #777777;
+            font-size: 14px;
+            a{
+              color: #777777;
+              font-size: 12px;
+            }
 
           }
         }
       }
     }
-  }
 
+
+  }
+  .message-btn{
+    margin-top: 20px;
+    height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    a{
+      color: $white;
+      font-size: 14px;
+      letter-spacing: .7px;
+      text-decoration: none;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $brand-color;
+      border: 1px solid $brand-color;
+      border-radius: 10rem;
+      z-index: -2;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken($brand-color, 15%);
+      transition: all .3s;
+      border-radius: 10rem;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: $white;
+
+      &:before {
+        width: 100%;
+      }
+    }
+  }
 }
