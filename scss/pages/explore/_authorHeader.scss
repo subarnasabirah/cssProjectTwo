@@ -7,6 +7,9 @@
     position: relative;
 
     .author-img {
+      @include media("sm") {
+        float: none;
+      }
       float: left;
       margin-right: 20px;
 
@@ -23,8 +26,9 @@
       p{
         font-size: 25px;
         font-weight: 500;
+        line-height: 31px;
         color: $text-color;
-        margin-top: 10px;
+        padding-top: 20px;
       }
       .reviews{
         ul{
@@ -36,7 +40,6 @@
               color: #777777;
               font-size: 12px;
             }
-
           }
         }
       }

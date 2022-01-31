@@ -1,0 +1,221 @@
+.cameron-listing-section {
+  padding: 100px 0;
+
+  .cameron-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .featured-list {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    .thumb {
+      display: flex;
+      height: 200px;
+      max-width: 300px;
+      margin: 10px;
+      position: relative;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        display: block;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .thumb-cntn {
+      .tag-one {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        right: 25px;
+        bottom: 0;
+
+        li {
+          border: 1px solid rgba(255, 255, 255, .5);
+          border-radius: 8px;
+          height: 30px;
+          line-height: 30px;
+          margin-right: 5px;
+          width: 58px;
+          text-align: center;
+
+          a {
+            font-size: 14px;
+            color: #fefefe;
+            line-height: 1.2;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .tag-two {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        bottom: 0;
+
+        li {
+          a {
+            background-color: #ED4949;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            height: 30px;
+            padding: 8px 20px;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .listining-reviews {
+        position: absolute;
+        top: 170px;
+        left: 25px;
+        bottom: 0;
+
+        li {
+          margin-right: 2px !important;
+
+          a {
+            text-decoration: none;
+            color: $white;
+            font-size: 12px;
+          }
+        }
+      }
+
+    }
+
+    .details {
+      position: relative;
+
+      .adventure-content {
+        position: relative;
+        padding: 35px 20px 10px;
+
+        h4 {
+          font-size: 18px;
+          color: $text-color;
+          font-weight: 500;
+          line-height: 26px;
+        }
+
+        p {
+          font-size: 14px;
+          color: $text-color-light;
+          line-height: 30px;
+
+          i {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: $black;
+            line-height: 30px;
+            text-align: center;
+            color: $white;
+            margin-right: 5px;
+          }
+        }
+
+        .prop-details {
+          li {
+            margin-right: 30px;
+
+            a {
+              font-size: 15px;
+              color: $text-color;
+              line-height: 22px;
+              text-decoration: none;
+
+              i {
+                padding-right: 5px;
+                color: $text-color-light;
+              }
+            }
+          }
+        }
+
+        .prop-ftr {
+          padding-top: 15px;
+          .outdor-actv {
+            display: flex;
+            li {
+              a {
+                text-decoration: none;
+                color: $text-color;
+                line-height: 30px;
+
+                i {
+                  height: 30px;
+                  width: 30px;
+                  border-radius: 50%;
+                  background: $yellow;
+                  line-height: 30px;
+                  text-align: center;
+                  color: $white;
+                  margin-right: 5px;
+
+                }
+              }
+            }
+          }
+          .heart-search-icon{
+            display: flex;
+            justify-content: end;
+            li{
+              a{
+                i{
+                  color: $text-color-light;
+                  font-size: 16px;
+                }
+                .activities-icon-one{
+                  margin-top: 8px;
+                }
+                .activities-icon-two{
+                  color: #a1a1a1;
+                  height: 30px;
+                  width: 30px;
+                  border-radius: 50%;
+                  background: #eeeefe;
+                  padding: 8px;
+                  margin-left: 20px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
