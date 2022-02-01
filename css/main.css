@@ -517,27 +517,33 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .cameron-listing-section .featured-list { display: flex; background-color: #ffffff; border: 1px solid #EAEAEA; border-radius: 8px; margin-bottom: 30px; overflow: hidden; position: relative; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
+@media all and (max-width: 767px) { .cameron-listing-section .featured-list { display: block; } }
+
 .cameron-listing-section .featured-list .thumb { display: flex; height: 200px; max-width: 300px; margin: 10px; position: relative; width: 100%; border-radius: 8px; overflow: hidden; }
 
-.cameron-listing-section .featured-list .thumb img { display: block; }
+@media all and (max-width: 767px) { .cameron-listing-section .featured-list .thumb { width: auto; height: auto; max-width: 100%; } }
+
+.cameron-listing-section .featured-list .thumb img { display: block; max-width: 100%; }
 
 .cameron-listing-section .featured-list .thumb::after { content: ""; display: block; position: absolute; border-radius: 10px; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 
-.cameron-listing-section .featured-list .thumb-cntn .tag-one { position: absolute; top: 25px; left: 25px; right: 25px; bottom: 0; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn { z-index: 1; }
 
-.cameron-listing-section .featured-list .thumb-cntn .tag-one li { border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 8px; height: 30px; line-height: 30px; margin-right: 5px; width: 58px; text-align: center; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn .tag-one { position: absolute; top: 20px; left: 20px; right: 20px; bottom: 0; }
 
-.cameron-listing-section .featured-list .thumb-cntn .tag-one li a { font-size: 14px; color: #fefefe; line-height: 1.2; text-decoration: none; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn .tag-one li { border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 8px; height: 30px; line-height: 30px; margin-right: 5px; width: 58px; text-align: center; }
 
-.cameron-listing-section .featured-list .thumb-cntn .tag-two { position: absolute; top: 30px; left: 200px; bottom: 0; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn .tag-one li a { font-size: 14px; color: #fefefe; line-height: 1.2; text-decoration: none; }
 
-.cameron-listing-section .featured-list .thumb-cntn .tag-two li a { background-color: #ED4949; border-radius: 8px; color: #fff; font-size: 14px; height: 30px; padding: 8px 20px; text-decoration: none; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn .tag-two { position: absolute; top: 25px; left: auto; right: 20px; bottom: 0; }
 
-.cameron-listing-section .featured-list .thumb-cntn .listining-reviews { position: absolute; top: 170px; left: 25px; bottom: 0; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn .tag-two li a { background-color: #ED4949; border-radius: 8px; color: #fff; font-size: 14px; height: 30px; padding: 8px 20px; text-decoration: none; }
 
-.cameron-listing-section .featured-list .thumb-cntn .listining-reviews li { margin-right: 2px !important; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn .listining-reviews { position: absolute; left: 20px; bottom: 15px; }
 
-.cameron-listing-section .featured-list .thumb-cntn .listining-reviews li a { text-decoration: none; color: #ffffff; font-size: 12px; }
+.cameron-listing-section .featured-list .thumb .thumb-cntn .listining-reviews li { margin-right: 2px !important; }
+
+.cameron-listing-section .featured-list .thumb .thumb-cntn .listining-reviews li a { text-decoration: none; color: #ffffff; font-size: 12px; }
 
 .cameron-listing-section .featured-list .details { position: relative; }
 
@@ -548,6 +554,14 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 .cameron-listing-section .featured-list .details .adventure-content p { font-size: 14px; color: #717171; line-height: 30px; }
 
 .cameron-listing-section .featured-list .details .adventure-content p i { height: 30px; width: 30px; border-radius: 50%; background: #000; line-height: 30px; text-align: center; color: #ffffff; margin-right: 5px; }
+
+.cameron-listing-section .featured-list .details .adventure-content p .icon-three { background: #FE3780; color: #ffffff; }
+
+.cameron-listing-section .featured-list .details .adventure-content p .icon-five { background: #290A89; color: #ffffff; }
+
+.cameron-listing-section .featured-list .details .adventure-content p .icon-seven { background: #FFD825; color: #ffffff; }
+
+.cameron-listing-section .featured-list .details .adventure-content p .icon-nine { background: #276ACE; color: #ffffff; }
 
 .cameron-listing-section .featured-list .details .adventure-content .prop-details li { margin-right: 30px; }
 
@@ -563,6 +577,14 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .cameron-listing-section .featured-list .details .adventure-content .prop-ftr .outdor-actv li a i { height: 30px; width: 30px; border-radius: 50%; background: #dd9934; line-height: 30px; text-align: center; color: #ffffff; margin-right: 5px; }
 
+.cameron-listing-section .featured-list .details .adventure-content .prop-ftr .outdor-actv li a .icon-four { background: #33A0DD; color: #ffffff; }
+
+.cameron-listing-section .featured-list .details .adventure-content .prop-ftr .outdor-actv li a .icon-six { background: #FF5959; color: #ffffff; }
+
+.cameron-listing-section .featured-list .details .adventure-content .prop-ftr .outdor-actv li a .icon-eight { background: #DD33A3; color: #ffffff; }
+
+.cameron-listing-section .featured-list .details .adventure-content .prop-ftr .outdor-actv li a .icon-ten { background: #DD3333; color: #ffffff; }
+
 .cameron-listing-section .featured-list .details .adventure-content .prop-ftr .heart-search-icon { display: flex; justify-content: end; }
 
 .cameron-listing-section .featured-list .details .adventure-content .prop-ftr .heart-search-icon li a i { color: #717171; font-size: 16px; }
@@ -570,5 +592,21 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 .cameron-listing-section .featured-list .details .adventure-content .prop-ftr .heart-search-icon li a .activities-icon-one { margin-top: 8px; }
 
 .cameron-listing-section .featured-list .details .adventure-content .prop-ftr .heart-search-icon li a .activities-icon-two { color: #a1a1a1; height: 30px; width: 30px; border-radius: 50%; background: #eeeefe; padding: 8px; margin-left: 20px; }
+
+.cameron-listing-section .sidebar .contact-area { border: 1px solid #eaeaea; border-radius: 8px; padding: 30px; position: relative; margin-bottom: 30px; }
+
+.cameron-listing-section .sidebar .contact-area h4 { color: #222222; font-size: 18px; margin-bottom: 15px; }
+
+.cameron-listing-section .sidebar .contact-area ul li { line-height: 35px; display: flex; }
+
+.cameron-listing-section .sidebar .contact-area ul li i { line-height: 35px; margin-right: 15px; }
+
+.cameron-listing-section .sidebar .contact-area ul li a { color: #717171; font-size: 14px; text-decoration: none; }
+
+.cameron-listing-section .sidebar .about-area { border: 1px solid #eaeaea; border-radius: 8px; padding: 30px; position: relative; margin-bottom: 30px; }
+
+.cameron-listing-section .sidebar .about-area h4 { color: #222222; font-size: 18px; margin-bottom: 15px; }
+
+.cameron-listing-section .sidebar .about-area p { font-size: 14px; color: #717171; margin: 0 0 10px; }
 
 /*# sourceMappingURL=main.css.map */
