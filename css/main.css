@@ -110,6 +110,8 @@ header .navbar .navbar-nav li a:hover { color: #8B9A46; }
 
 @media all and (max-width: 991px) { header .navbar .navbar-nav li a:hover { background-color: #8B9A46; color: #ffffff; -webkit-transition: 0.75s ease; -o-transition: 0.75s ease; transition: 0.75s ease; } }
 
+@media all and (max-width: 991px) { header .navbar .navbar-nav li a i { display: none; } }
+
 header .navbar .navbar-nav li .nav-item { font-weight: 600; padding-left: 10px; }
 
 header .navbar .navbar-nav li .nav-item .nav-link:hover { color: #000; }
@@ -207,9 +209,15 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 #explore .explore-brand { color: #000; }
 
+@media all and (max-width: 991px) { #explore .explore-nav { margin-top: 20px !important; padding: 10px 0; background: #ffffff !important; } }
+
 #explore .explore-nav li a { color: #000; }
 
 #explore .explore-nav li a:hover { color: #8B9A46; }
+
+@media all and (max-width: 991px) { #explore .explore-nav li a:hover { color: #ffffff; } }
+
+@media all and (max-width: 991px) { #explore .explore-nav li a i { display: none; } }
 
 #explore .explore-nav li .explore-listing-btn { color: #ffffff; }
 
@@ -222,6 +230,8 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 #explore .explore-search-box .explore-search::placeholder { color: #000; }
 
 #explore .explore-dropdown li a:hover { color: #ffffff; }
+
+#explore .explore-toggler { color: #000 !important; }
 
 .owl-carousel .owl-dots { text-align: center; padding-top: 10px; }
 
