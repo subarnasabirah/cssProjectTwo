@@ -149,7 +149,6 @@ header {
           z-index: 9999;
           border-radius: 5px;
           visibility: hidden;
-          @include transition(0.75s ease);
 
           li {
             list-style-type: none;
@@ -188,7 +187,6 @@ header {
 
         &:hover .dropdown {
           visibility: visible;
-          @include transition(0.75s ease);
         }
 
         .listing-btn {
