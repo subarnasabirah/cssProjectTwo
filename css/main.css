@@ -593,6 +593,62 @@ header.scrolled { background: rgba(0, 0, 0, 0.8) !important; box-shadow: rgba(0,
 
 .cameron-listing-section .featured-list .details .adventure-content .prop-ftr .heart-search-icon li a .activities-icon-two { color: #a1a1a1; height: 30px; width: 30px; border-radius: 50%; background: #eeeefe; padding: 8px; margin-left: 20px; }
 
+.cameron-listing-section .reviews-content .total-reviews h4 { font-size: 16px; color: #222222; font-weight: 500; line-height: 26px; margin-bottom: 0; }
+
+.cameron-listing-section .reviews-content .thum-one-area { padding: 30px 0 0; display: flex; }
+
+.cameron-listing-section .reviews-content .thum-one-area img { max-width: 100%; isplay: block; height: 100px; width: 100px; border-radius: 50%; border: 2px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; margin-right: 25px; }
+
+.cameron-listing-section .reviews-content .thum-one-area .thum-body h4 { color: #222222; font-size: 16px; font-weight: 500; line-height: 23px; margin-bottom: 0; }
+
+.cameron-listing-section .reviews-content .thum-one-area .thum-body .date-time { display: flex; justify-content: space-between; }
+
+@media all and (max-width: 767px) { .cameron-listing-section .reviews-content .thum-one-area .thum-body .date-time { display: block; } }
+
+.cameron-listing-section .reviews-content .thum-one-area .thum-body .date-time span { color: #717171; font-size: 12px; }
+
+@media all and (max-width: 767px) { .cameron-listing-section .reviews-content .thum-one-area .thum-body .date-time .review-right .reviews { margin-top: 10px; } }
+
+.cameron-listing-section .reviews-content .thum-one-area .thum-body .date-time .review-right .reviews li { margin-right: 2px !important; }
+
+.cameron-listing-section .reviews-content .thum-one-area .thum-body .date-time .review-right .reviews li a { color: #717171; font-size: 14px; text-decoration: none; }
+
+.cameron-listing-section .reviews-content .thum-one-area .thum-body p { margin-top: 20px; font-size: 14px; color: #717171; line-height: 1.857; }
+
+.cameron-listing-section .reviews-content .image-list-item { padding: 20px 0; }
+
+.cameron-listing-section .reviews-content .image-list-item .image-items { display: flex; flex-wrap: wrap; justify-content: center; }
+
+@media all and (max-width: 575px) { .cameron-listing-section .reviews-content .image-list-item .image-items { display: block; } }
+
+.cameron-listing-section .reviews-content .image-list-item .image-items li { width: 150px; height: 150px; margin-right: 10px; }
+
+@media all and (max-width: 575px) { .cameron-listing-section .reviews-content .image-list-item .image-items li { display: block; margin: 0 auto; } }
+
+@media all and (max-width: 1199px) { .cameron-listing-section .reviews-content .image-list-item .image-items li { margin-bottom: 10px; } }
+
+.cameron-listing-section .reviews-content .image-list-item .image-items li img { max-width: 100%; border-radius: 8px; }
+
+.cameron-listing-section .reviews-content .thum-two-area { padding: 30px 0 0; display: flex; }
+
+.cameron-listing-section .reviews-content .thum-two-area img { max-width: 100%; isplay: block; height: 100px; width: 100px; border-radius: 50%; border: 2px solid #ffffff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; margin-right: 25px; }
+
+.cameron-listing-section .reviews-content .thum-two-area .thum-body h4 { color: #222222; font-size: 16px; font-weight: 500; line-height: 23px; margin-bottom: 0; }
+
+.cameron-listing-section .reviews-content .thum-two-area .thum-body .date-time { display: flex; justify-content: space-between; }
+
+@media all and (max-width: 767px) { .cameron-listing-section .reviews-content .thum-two-area .thum-body .date-time { display: block; } }
+
+.cameron-listing-section .reviews-content .thum-two-area .thum-body .date-time span { color: #717171; font-size: 12px; }
+
+@media all and (max-width: 767px) { .cameron-listing-section .reviews-content .thum-two-area .thum-body .date-time .review-right .reviews { margin-top: 10px; } }
+
+.cameron-listing-section .reviews-content .thum-two-area .thum-body .date-time .review-right .reviews li { margin-right: 2px !important; }
+
+.cameron-listing-section .reviews-content .thum-two-area .thum-body .date-time .review-right .reviews li a { color: #717171; font-size: 14px; text-decoration: none; }
+
+.cameron-listing-section .reviews-content .thum-two-area .thum-body p { margin-top: 20px; font-size: 14px; color: #717171; line-height: 1.857; }
+
 .cameron-listing-section .sidebar .contact-area { border: 1px solid #eaeaea; border-radius: 8px; padding: 30px; position: relative; margin-bottom: 30px; }
 
 .cameron-listing-section .sidebar .contact-area h4 { color: #222222; font-size: 18px; margin-bottom: 15px; }
